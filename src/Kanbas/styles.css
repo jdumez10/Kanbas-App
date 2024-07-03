@@ -566,6 +566,27 @@ html, #root, #wd-kanbas {
     margin-right: 2px; /* Adjust the value as needed */
   }
 
+  .wd-assignment-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .icon-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-group > * {
+    margin-left: 10px;
+  }
+  
+  .d-flex.align-items-center {
+    flex-grow: 1;
+  }
   
 /*
 

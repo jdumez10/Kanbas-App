@@ -62,17 +62,19 @@ export default function Assignments() {
         {courseAssignments.map((assignment: any) => (
           <li key={assignment._id} className="wd-assignment-list-item list-group-item p-0 fs-5 border-gray position-relative">
             <div className="d-flex justify-content-between align-items-center p-3 ps-2 bg-light">
-              <BsGripVertical className="me-2 fs-3 text-secondary" />
-              <div>
-                <Link className="wd-assignment-link fs-5 d-block" to={`/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}>
-                  <MdOutlineAssignment className="me-2 text-success" />
-                  {assignment.title}
-                </Link>
-                <div className="text-muted small">
-                  <span className="text-danger">Multiple Modules</span> | <strong>Not available until</strong> {formatDateTime(assignment.availableDate)} | <strong>Due</strong> {formatDateTime(assignment.dueDate)} | {assignment.points} pts
+              <div className="d-flex align-items-center">
+                <BsGripVertical className="me-2 fs-3 text-secondary" />
+                <div>
+                  <Link className="wd-assignment-link fs-5 d-block" to={`/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}>
+                    <MdOutlineAssignment className="me-2 text-success" />
+                    {assignment.title}
+                  </Link>
+                  <div className="text-muted small">
+                    <span className="text-danger">Multiple Modules</span> | <strong>Not available until</strong> {formatDateTime(assignment.availableDate)} | <strong>Due</strong> {formatDateTime(assignment.dueDate)} | {assignment.points} pts
+                  </div>
                 </div>
               </div>
-              <div className="d-flex align-items-center ms-2">
+              <div className="icon-group">
                 <GreenCheckmark />
                 <BsThreeDotsVertical className="fs-4 text-secondary" />
                 <button onClick={() => handleDelete(assignment._id)} className="btn btn-danger btn-sm ms-2">
