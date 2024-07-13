@@ -1,4 +1,3 @@
-// src/Kanbas/Courses/Assignments/reducer.ts
 import { createSlice } from "@reduxjs/toolkit";
 import { assignments } from "../../Database";
 

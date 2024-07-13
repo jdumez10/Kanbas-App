@@ -587,6 +587,38 @@ html, #root, #wd-kanbas {
   .d-flex.align-items-center {
     flex-grow: 1;
   }
+
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .btn-small {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .card-text {
+    min-height: 3rem; /* Adjust the value as needed */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-body .d-flex {
+    margin-top: auto;
+  }
   
 /*
 

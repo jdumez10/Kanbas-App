@@ -23,7 +23,8 @@ export default function Dashboard({
       <h5>New Course
         <button className="btn btn-primary float-end" id="wd-add-new-course-click" onClick={addNewCourse}>Add</button>
         <button className="btn btn-warning float-end me-2" id="wd-update-course-click" onClick={updateCourse}>Update</button>
-      </h5><hr />
+      </h5>
+      <hr />
       <input
         value={course.name}
         className="form-control mb-2"
@@ -45,7 +46,7 @@ export default function Dashboard({
                 <FaEllipsisV className="three-dots-menu" />
                 <img src={course.image} className="card-img-top" alt={course.name} />
                 <div className="card-body">
-                  <Link className="wd-dashboard-course-link" to={`/Kanbas/Courses/${course._id}/Home`}>
+                  <Link className="wd-dashboard-course-link fs-5 d-block" to={`/Kanbas/Courses/${course._id}/Home`}>
                     {course.name}
                   </Link>
                   <p className="wd-dashboard-course-title card-text">
@@ -55,17 +56,25 @@ export default function Dashboard({
                     <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn btn-small btn-primary">
                       Go
                     </Link>
-                    <div>
-                      <button onClick={(event) => {
-                        event.preventDefault();
-                        setCourse(course);
-                      }} className="btn btn-small btn-warning me-2" id="wd-edit-course-click">
+                    <div className="d-flex">
+                      <button
+                        onClick={(event) => {
+                          event.preventDefault();
+                          setCourse(course);
+                        }}
+                        className="btn btn-small btn-warning me-2"
+                        id="wd-edit-course-click"
+                      >
                         Edit
                       </button>
-                      <button onClick={(event) => {
-                        event.preventDefault();
-                        deleteCourse(course._id);
-                      }} className="btn btn-small btn-danger" id="wd-delete-course-click">
+                      <button
+                        onClick={(event) => {
+                          event.preventDefault();
+                          deleteCourse(course._id);
+                        }}
+                        className="btn btn-small btn-danger"
+                        id="wd-delete-course-click"
+                      >
                         Delete
                       </button>
                     </div>

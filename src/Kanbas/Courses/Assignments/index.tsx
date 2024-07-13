@@ -1,30 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaPlus, FaEllipsisV, FaSearch, FaTrash } from 'react-icons/fa';
 import { MdOutlineAssignment } from 'react-icons/md';
 import { BsGripVertical, BsThreeDotsVertical } from 'react-icons/bs';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { deleteAssignment } from './reducer';
-import { RootState } from '../../store';
+import * as client from './client';
 import GreenCheckmark from '../Modules/GreenCheckmark';
 
+interface Assignment {
+  _id: string;
+  title: string;
+  course: string;
+  availableDate: string;
+  dueDate: string;
+  points: number;
+}
+
 export default function Assignments() {
-  const { cid } = useParams();
+  const { cid } = useParams<{ cid: string }>();
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const assignments = useSelector((state: RootState) => state.assignmentsReducer.assignments);
-  const courseAssignments = assignments.filter((assignment: any) => assignment.course === cid);
+  const [courseAssignments, setCourseAssignments] = useState<Assignment[]>([]);
+
+  useEffect(() => {
+    const fetchAssignments = async () => {
+      if (cid) {
+        const assignments = await client.fetchAssignmentsForCourse(cid);
+        setCourseAssignments(assignments);
+      }
+    };
+    fetchAssignments();
+  }, [cid]);
+
+  const deleteAssignment = async (assignmentId: string) => {
+    await client.deleteAssignment(assignmentId);
+    setCourseAssignments(courseAssignments.filter((assignment) => assignment._id !== assignmentId));
+  };
 
   const formatDateTime = (dateTimeString: string) => {
     const date = new Date(dateTimeString);
     const options: Intl.DateTimeFormatOptions = { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
     return new Intl.DateTimeFormat('en-US', options).format(date);
-  };
-
-  const handleDelete = (assignmentId: string) => {
-    if (window.confirm('Are you sure you want to delete this assignment?')) {
-      dispatch(deleteAssignment(assignmentId));
-    }
   };
 
   return (
@@ -59,27 +73,23 @@ export default function Assignments() {
             </div>
           </div>
         </li>
-        {courseAssignments.map((assignment: any) => (
+        {courseAssignments.map((assignment) => (
           <li key={assignment._id} className="wd-assignment-list-item list-group-item p-0 fs-5 border-gray position-relative">
             <div className="d-flex justify-content-between align-items-center p-3 ps-2 bg-light">
-              <div className="d-flex align-items-center">
-                <BsGripVertical className="me-2 fs-3 text-secondary" />
-                <div>
-                  <Link className="wd-assignment-link fs-5 d-block" to={`/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}>
-                    <MdOutlineAssignment className="me-2 text-success" />
-                    {assignment.title}
-                  </Link>
-                  <div className="text-muted small">
-                    <span className="text-danger">Multiple Modules</span> | <strong>Not available until</strong> {formatDateTime(assignment.availableDate)} | <strong>Due</strong> {formatDateTime(assignment.dueDate)} | {assignment.points} pts
-                  </div>
+              <BsGripVertical className="me-2 fs-3 text-secondary" />
+              <div>
+                <Link className="wd-assignment-link fs-5 d-block" to={`/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}>
+                  <MdOutlineAssignment className="me-2 text-success" />
+                  {assignment.title}
+                </Link>
+                <div className="text-muted small">
+                  <span className="text-danger">Multiple Modules</span> | <strong>Not available until</strong> {formatDateTime(assignment.availableDate)} | <strong>Due</strong> {formatDateTime(assignment.dueDate)} | {assignment.points} pts
                 </div>
               </div>
-              <div className="icon-group">
+              <div className="d-flex align-items-center ms-2">
                 <GreenCheckmark />
                 <BsThreeDotsVertical className="fs-4 text-secondary" />
-                <button onClick={() => handleDelete(assignment._id)} className="btn btn-danger btn-sm ms-2">
-                  <FaTrash />
-                </button>
+                <FaTrash className="fs-4 text-danger ms-2" onClick={() => deleteAssignment(assignment._id)} />
               </div>
             </div>
             <div className="border-start border-3 border-success position-absolute top-0 bottom-0 start-0"></div>
