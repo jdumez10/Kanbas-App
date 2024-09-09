@@ -88,3 +88,66 @@ Make sure MongoDB is running locally or connect to a cloud instance. Set up the 
 ```env
 MONGO_URI=mongodb://localhost:27017/kanbas
 JWT_SECRET=your_jwt_secret
+```
+
+## Folder Structure
+
+Kanbas-App/
+│
+├── client/             # Frontend (React.js)
+│   ├── src/
+│   │   ├── Kanbas/     # Contains account, courses, assignments components
+│   │   ├── Labs/       # Lab exercises for demo purposes
+│   │   └── index.tsx   # Main entry point for the React app
+│   └── public/
+├── server/             # Backend (Node.js/Express)
+│   ├── Kanbas/         # Course, Module, Assignment, User routes and schemas
+│   ├── Users/          # User-related routes, models, DAOs
+│   └── App.js          # Main Express.js app file
+└── README.md           # Project documentation
+
+---
+
+## APIs
+
+### 1. **Course API**
+- **GET** `/api/courses` - Get all courses
+- **POST** `/api/courses` - Create a new course
+- **PUT** `/api/courses/:id` - Update course information
+- **DELETE** `/api/courses/:id` - Delete a course
+
+### 2. **Assignments API**
+- **GET** `/api/courses/:courseId/assignments` - Get all assignments for a course
+- **POST** `/api/courses/:courseId/assignments` - Create a new assignment
+- **PUT** `/api/courses/:courseId/assignments/:assignmentId` - Update an assignment
+- **DELETE** `/api/courses/:courseId/assignments/:assignmentId` - Delete an assignment
+
+### 3. **User API**
+- **POST** `/api/auth/signup` - Register a new user
+- **POST** `/api/auth/login` - Authenticate a user
+- **GET** `/api/users/me` - Get the authenticated user details
+
+---
+
+## Contributing
+
+We welcome contributions! Please follow the below guidelines to contribute:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m "Add new feature"`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Create a pull request
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+
+
+
+
