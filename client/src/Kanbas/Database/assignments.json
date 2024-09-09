@@ -1,0 +1,24 @@
+[
+    { "_id": "A5001_1", "title": "Variables, Arithmetic Operations & Debugging", "course": "5001", "description": "Learn about variables, arithmetic operations, and debugging techniques.", "points": 100, "dueDate": "2022-09-30T23:59", "availableDate": "2022-09-01T00:00" },
+    { "_id": "A5001_2", "title": "Functions & Testing", "course": "5001", "description": "Introduction to functions and unit testing in programming.", "points": 100, "dueDate": "2022-10-15T23:59", "availableDate": "2022-10-01T00:00" },
+    { "_id": "A5001_3", "title": "Boolean Expressions & Making Logic", "course": "5001", "description": "Learn about boolean expressions and making logical decisions in programming.", "points": 100, "dueDate": "2022-10-30T23:59", "availableDate": "2022-10-15T00:00" },
+    { "_id": "A5002_1", "title": "Number Theory", "course": "5002", "description": "Introduction to number theory concepts.", "points": 100, "dueDate": "2022-09-30T23:59", "availableDate": "2022-09-01T00:00" },
+    { "_id": "A5002_2", "title": "Boolean Algebra and Logic", "course": "5002", "description": "Learn about boolean algebra and logic.", "points": 100, "dueDate": "2022-10-15T23:59", "availableDate": "2022-10-01T00:00" },
+    { "_id": "A5002_3", "title": "Implication, Predicates and Quantifiers", "course": "5002", "description": "Understanding implication, predicates, and quantifiers in logic.", "points": 100, "dueDate": "2022-10-30T23:59", "availableDate": "2022-10-15T00:00" },
+    { "_id": "A5004_1", "title": "Data Definitions, Classes & Testing", "course": "5004", "description": "Introduction to data definitions, classes, and testing.", "points": 100, "dueDate": "2023-01-30T23:59", "availableDate": "2023-01-10T00:00" },
+    { "_id": "A5004_2", "title": "Methods, Enumeration & Exceptions", "course": "5004", "description": "Learn about methods, enumeration, and exception handling.", "points": 100, "dueDate": "2023-02-15T23:59", "availableDate": "2023-02-01T00:00" },
+    { "_id": "A5004_3", "title": "Representing More Complex Forms of Data", "course": "5004", "description": "Understanding how to represent complex forms of data.", "points": 100, "dueDate": "2023-02-28T23:59", "availableDate": "2023-02-15T00:00" },
+    { "_id": "A5008_1", "title": "Introduction to Linux GIT and SSH", "course": "5008", "description": "Basics of Linux, GIT, and SSH.", "points": 100, "dueDate": "2023-01-30T23:59", "availableDate": "2023-01-10T00:00" },
+    { "_id": "A5008_2", "title": "The C Programming Language", "course": "5008", "description": "Introduction to the C programming language.", "points": 100, "dueDate": "2023-02-15T23:59", "availableDate": "2023-02-01T00:00" },
+    { "_id": "A5008_3", "title": "Array, Stacks, Queues and Linked Lists", "course": "5008", "description": "Understanding arrays, stacks, queues, and linked lists.", "points": 100, "dueDate": "2023-02-28T23:59", "availableDate": "2023-02-15T00:00" },
+    { "_id": "A5800_1", "title": "Introduction", "course": "5800", "description": "Overview of algorithms and their importance.", "points": 100, "dueDate": "2023-06-30T23:59", "availableDate": "2023-06-10T00:00" },
+    { "_id": "A5800_2", "title": "Complexity", "course": "5800", "description": "Introduction to the complexity of algorithms.", "points": 100, "dueDate": "2023-07-15T23:59", "availableDate": "2023-07-01T00:00" },
+    { "_id": "A5800_3", "title": "Recurrences", "course": "5800", "description": "Understanding recurrences in algorithms.", "points": 100, "dueDate": "2023-07-30T23:59", "availableDate": "2023-07-15T00:00" },
+    { "_id": "A5200_1", "title": "Basics", "course": "5200", "description": "Fundamental concepts of database management systems.", "points": 100, "dueDate": "2023-09-30T23:59", "availableDate": "2023-09-01T00:00" },
+    { "_id": "A5200_2", "title": "SQL and UML Advanced", "course": "5200", "description": "Advanced concepts in SQL and UML.", "points": 100, "dueDate": "2023-10-15T23:59", "availableDate": "2023-10-01T00:00" },
+    { "_id": "A5200_3", "title": "NoSQL and CAP theorem", "course": "5200", "description": "Understanding NoSQL databases and CAP theorem.", "points": 100, "dueDate": "2023-10-30T23:59", "availableDate": "2023-10-15T00:00" },
+    { "_id": "A5610_1", "title": "HTML", "course": "5610", "description": "Introduction to HTML for web development.", "points": 100, "dueDate": "2024-06-30T23:59", "availableDate": "2024-06-10T00:00" },
+    { "_id": "A5610_2", "title": "CSS", "course": "5610", "description": "Introduction to CSS for styling web pages.", "points": 100, "dueDate": "2024-07-15T23:59", "availableDate": "2024-07-01T00:00" },
+    { "_id": "A5610_3", "title": "JavaScript Basics", "course": "5610", "description": "Introduction to JavaScript for web development.", "points": 100, "dueDate": "2024-07-30T23:59", "availableDate": "2024-07-15T00:00" }
+  ]
+  

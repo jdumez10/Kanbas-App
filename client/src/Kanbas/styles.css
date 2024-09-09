@@ -1,0 +1,702 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button Styling */
+.btn-secondary {
+    --bs-btn-color: #20232a;
+    --bs-btn-bg: #c7cdd1;
+    --bs-btn-border-color: #c7cdd1;
+    --bs-btn-hover-color: #fff;
+}
+
+.btn-danger {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #dc3545;
+    --bs-btn-border-color: #dc3545;
+    --bs-btn-hover-bg: #c82333;
+    --bs-btn-hover-border-color: #bd2130;
+}
+
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #28a745;
+    --bs-btn-border-color: #28a745;
+    --bs-btn-hover-bg: #218838;
+    --bs-btn-hover-border-color: #1e7e34;
+}
+
+.bg-secondary {
+    background-color: #c7cdd1 !important;
+}
+
+.border-gray {
+    border: 1px solid gray;
+}
+
+/* Ensure full height for these elements */
+html, #root, #wd-kanbas {
+    height: 100%;
+}
+
+/* Flex container for layout */
+#wd-kanbas {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Navigation Styling */
+#wd-kanbas-navigation {
+    background-color: #20232a;
+    width: 120px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%; 
+}
+
+#wd-kanbas-navigation a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: white; 
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#wd-kanbas-navigation a:hover,
+#wd-kanbas-navigation a.active {
+    background-color: #61dafb;
+    color: #20232a;
+}
+
+#wd-kanbas-navigation img {
+    margin-bottom: 20px;
+}
+
+/* Adjust icon sizes and spacing */
+#wd-kanbas-navigation a i,
+#wd-kanbas-navigation a svg {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* Dashboard Styling */
+#wd-dashboard {
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+    flex: 1;
+}
+
+#wd-dashboard-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#wd-dashboard-published {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Card styling */
+.wd-dashboard-course {
+    margin-bottom: 20px;
+    width: 250px; /* Ensure fixed width for courses */
+}
+
+.wd-dashboard-course .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #fff; /* White background */
+    position: relative; /* For positioning the three-dot menu */
+}
+
+.wd-dashboard-course .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.wd-dashboard-course img {
+    width: 100%;
+    height: auto;
+}
+
+.wd-dashboard-course .card-body {
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+    position: relative;
+}
+
+.wd-dashboard-course .wd-dashboard-course-link {
+    font-size: 1em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+    display: block;
+    text-decoration: none;
+}
+
+.wd-dashboard-course .wd-dashboard-course-title {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px; /* Adjusted margin */
+}
+
+.wd-dashboard-course .course-info {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 10px; /* Adjusted margin */
+}
+
+/* Three-dot menu */
+.wd-dashboard-course .three-dots-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: red; /* Set to red */
+    border: 1px solid red; /* Red border */
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Assignment icon */
+.assignment-icon {
+    font-size: 1.5em;
+    color: grey; /* Set to grey */
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.assignment-icon:hover {
+    color: darkgrey;
+    cursor: pointer;
+}
+
+/* Dropdown menu item styling */
+.dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item .text-success {
+    margin-right: 0.5rem;
+}
+
+.dropdown-item .text-danger {
+    margin-right: 0.5rem;
+}
+
+/* Ensure minimum width for dropdown menu */
+.dropdown-menu {
+    min-width: 200px;
+}
+
+/* Ensure border for lessons */
+.wd-lesson {
+    border: 1px solid #ddd;
+}
+
+/* Assignments Screen */
+#wd-assignments {
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+#wd-assignments-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#wd-assignment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.wd-assignment-list-item {
+    border-left: 5px solid green; /* Green border */
+    padding: 10px 20px;
+    margin-bottom: 0; /* No bottom margin */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wd-assignment-link {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+#wd-search-assignment {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#wd-add-assignment-group, #wd-add-assignment {
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group .form-control {
+    border-radius: 4px;
+    padding-left: 35px;
+}
+
+.input-group .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 40%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.button-icon {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Responsive Design using Bootstrap */
+@media (min-width: 1200px) {
+    .row-cols-xl-4 > * {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .row-cols-lg-3 > * {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .row-cols-md-2 > * {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .row-cols-sm-1 > * {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Additional Styles */
+#assignments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9ecef; /* Slightly darker grey background */
+    padding: 10px 20px;
+    border: 1px solid #ddd; /* Light border */
+}
+
+#assignments-header .triangle-icon {
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+#assignments-header h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#assignments-header h2::before {
+    content: ""; /* Removed downward triangle from here */
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.8em;
+}
+
+#assignments-header .percentage-badge {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+#assignments-header .icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circular shape */
+    background-color: #fff; /* White background */
+    margin-left: 10px;
+}
+
+#assignments-header .icon-button:hover {
+    cursor: pointer;
+    background-color: #e9ecef; /* Light hover background */
+}
+
+/* Additional Styling for Apply Filters Button */
+.btn-apply-filters {
+    background-color: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid #c7cdd1;
+    border-radius: 3px;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-apply-filters:hover {
+    background-color: #e9ecef;
+}
+
+/* General Table Styling */
+.table thead th {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.875rem; /* Decreased font size */
+}
+
+.table thead .small-text {
+    font-size: 0.75rem;
+    margin-top: -5px;
+    text-align: center;
+}
+
+.table td {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.875rem; /* Decreased font size */
+}
+
+.table .form-control {
+    width: 100%;
+    font-size: 0.875rem; /* Match font size */
+}
+
+.table .btn-light {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem; /* Match font size */
+}
+
+.table .small-input {
+    width: 75px; /* Adjusted width for smaller input field */
+    padding: 0.25rem; /* Adjust padding */
+    font-size: 0.875rem; /* Match font size */
+}
+
+.table .small-button {
+    padding: 0.25rem 0.5rem; /* Adjust padding */
+    font-size: 0.875rem; /* Match font size */
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6 !important;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+.form-label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: right;
+    width: 100%;
+}
+
+.input-group .form-control {
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.input-group .search-icon {
+    position: absolute;
+    
+}
+
+/* Custom styling for the description box */
+.description-box {
+    white-space: pre-wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.description-box strong {
+    font-weight: bold;
+}
+
+.description-box em {
+    color: red;
+}
+
+.description-box ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.description-box a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Button Styling */
+.btn-secondary {
+    --bs-btn-color: #20232a;
+    --bs-btn-bg: #c7cdd1;
+    --bs-btn-border-color: #c7cdd1;
+    --bs-btn-hover-color: #fff;
+}
+
+.btn-danger {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #dc3545;
+    --bs-btn-border-color: #dc3545;
+    --bs-btn-hover-bg: #c82333;
+    --bs-btn-hover-border-color: #bd2130;
+}
+
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #28a745;
+    --bs-btn-border-color: #28a745;
+    --bs-btn-hover-bg: #218838;
+    --bs-btn-hover-border-color: #1e7e34;
+}
+
+.bg-secondary {
+    background-color: #c7cdd1 !important;
+}
+
+.border-gray {
+    border: 1px solid gray;
+}
+
+.card-body {
+    height: 160px; /* Set a fixed height for the card body */
+    overflow: hidden; /* Hide the overflow text */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Show only the first two lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-small {
+    align-self: flex-start; 
+    margin-top: auto; 
+    padding: 5px 10px; 
+    font-size: 0.85rem; 
+    width: auto;
+    color: #fff;
+    border: none; 
+    transition: background-color 0.3s ease; 
+}
+
+
+
+/* Cyan button styling */
+.btn-cyan {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #177ab8;
+  --bs-btn-border-color: #177ab8;;
+  --bs-btn-hover-bg:#177ab8;;
+  --bs-btn-hover-border-color:#177ab8;;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #177ab8;;
+  --bs-btn-border-color: #177ab8;;
+  --bs-btn-hover-bg: #177ab8;;
+  --bs-btn-hover-border-color: #177ab8;;
+}
+
+.btn-warning {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ffc107;
+    --bs-btn-border-color: #ffc107;
+    --bs-btn-hover-bg: #e0a800;
+    --bs-btn-hover-border-color: #d39e00;
+  }
+
+.icon-spacing {
+    margin-right: 2px; /* Adjust the value as needed */
+  }
+
+  .wd-assignment-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .icon-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-group > * {
+    margin-left: 10px;
+  }
+  
+  .d-flex.align-items-center {
+    flex-grow: 1;
+  }
+
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .btn-small {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .card-text {
+    min-height: 3rem; /* Adjust the value as needed */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-body .d-flex {
+    margin-top: auto;
+  }
+  
+/*
+
+.form-label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .form-label {
+        justify-content: flex-start;
+    }
+}
+
+.border {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+Responsive Design using Bootstrap 
+@media (min-width: 1200px) {
+    .row-cols-xl-4 > * {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .row-cols-lg-3 > * {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .row-cols-md-2 > * {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .row-cols-sm-1 > * {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.3333%;
+}
+
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/8px 10px;
+}
+
+ New class to make the box larger 
+.larger-box {
+    width: 100%;
+    max-width: 100%;
+}
+*/

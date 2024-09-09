@@ -1,0 +1,465 @@
+[
+    {
+      "_id": "M5001_1",
+      "name": "Variables, Arithmetic Operations & Debugging",
+      "description": "Introduction to variables, arithmetic operations, and debugging techniques.",
+      "course": "5001",
+      "lessons": [
+        {
+          "_id": "L5001_1_1",
+          "name": "Variables and Data Types",
+          "description": "Understanding variables and data types.",
+          "module": "M5001_1"
+        },
+        {
+          "_id": "L5001_1_2",
+          "name": "Arithmetic Operations",
+          "description": "Basic arithmetic operations in programming.",
+          "module": "M5001_1"
+        },
+        {
+          "_id": "L5001_1_3",
+          "name": "Debugging Techniques",
+          "description": "Introduction to debugging techniques.",
+          "module": "M5001_1"
+        }
+      ]
+    },
+    {
+      "_id": "M5001_2",
+      "name": "Functions & Testing",
+      "description": "Understanding functions and testing in programming.",
+      "course": "5001",
+      "lessons": [
+        {
+          "_id": "L5001_2_1",
+          "name": "Functions",
+          "description": "Introduction to functions in programming.",
+          "module": "M5001_2"
+        },
+        {
+          "_id": "L5001_2_2",
+          "name": "Unit Testing",
+          "description": "Basics of unit testing in software development.",
+          "module": "M5001_2"
+        }
+      ]
+    },
+    {
+      "_id": "M5001_3",
+      "name": "Boolean Expressions & Making Logic",
+      "description": "Understanding boolean expressions and logic making in programming.",
+      "course": "5001",
+      "lessons": [
+        {
+          "_id": "L5001_3_1",
+          "name": "Boolean Expressions",
+          "description": "Introduction to boolean expressions.",
+          "module": "M5001_3"
+        },
+        {
+          "_id": "L5001_3_2",
+          "name": "Logic Making",
+          "description": "Basics of logic making in programming.",
+          "module": "M5001_3"
+        }
+      ]
+    },
+    {
+      "_id": "M5002_1",
+      "name": "Number Theory",
+      "description": "Introduction to number theory and its applications.",
+      "course": "5002",
+      "lessons": [
+        {
+          "_id": "L5002_1_1",
+          "name": "Basic Number Theory",
+          "description": "Introduction to basic concepts in number theory.",
+          "module": "M5002_1"
+        },
+        {
+          "_id": "L5002_1_2",
+          "name": "Prime Numbers",
+          "description": "Understanding prime numbers and their properties.",
+          "module": "M5002_1"
+        }
+      ]
+    },
+    {
+      "_id": "M5002_2",
+      "name": "Boolean Algebra and Logic",
+      "description": "Introduction to boolean algebra and logic.",
+      "course": "5002",
+      "lessons": [
+        {
+          "_id": "L5002_2_1",
+          "name": "Boolean Algebra",
+          "description": "Basics of boolean algebra.",
+          "module": "M5002_2"
+        },
+        {
+          "_id": "L5002_2_2",
+          "name": "Logical Operations",
+          "description": "Introduction to logical operations.",
+          "module": "M5002_2"
+        }
+      ]
+    },
+    {
+      "_id": "M5002_3",
+      "name": "Implication, Predicates and Quantifiers",
+      "description": "Understanding implication, predicates and quantifiers in logic.",
+      "course": "5002",
+      "lessons": [
+        {
+          "_id": "L5002_3_1",
+          "name": "Implication",
+          "description": "Introduction to implication in logic.",
+          "module": "M5002_3"
+        },
+        {
+          "_id": "L5002_3_2",
+          "name": "Predicates",
+          "description": "Understanding predicates in logic.",
+          "module": "M5002_3"
+        },
+        {
+          "_id": "L5002_3_3",
+          "name": "Quantifiers",
+          "description": "Basics of quantifiers in logic.",
+          "module": "M5002_3"
+        }
+      ]
+    },
+    {
+      "_id": "M5004_1",
+      "name": "Data Definitions, Classes & Testing",
+      "description": "Introduction to data definitions, classes, and testing in object-oriented programming.",
+      "course": "5004",
+      "lessons": [
+        {
+          "_id": "L5004_1_1",
+          "name": "Data Definitions",
+          "description": "Understanding data definitions and their importance.",
+          "module": "M5004_1"
+        },
+        {
+          "_id": "L5004_1_2",
+          "name": "Classes and Objects",
+          "description": "Introduction to classes and objects in programming.",
+          "module": "M5004_1"
+        },
+        {
+          "_id": "L5004_1_3",
+          "name": "Testing",
+          "description": "Basics of testing in software development.",
+          "module": "M5004_1"
+        }
+      ]
+    },
+    {
+      "_id": "M5004_2",
+      "name": "Methods, Enumeration & Exceptions",
+      "description": "Understanding methods, enumeration, and exceptions in programming.",
+      "course": "5004",
+      "lessons": [
+        {
+          "_id": "L5004_2_1",
+          "name": "Methods",
+          "description": "Introduction to methods in programming.",
+          "module": "M5004_2"
+        },
+        {
+          "_id": "L5004_2_2",
+          "name": "Enumeration",
+          "description": "Basics of enumeration in programming.",
+          "module": "M5004_2"
+        },
+        {
+          "_id": "L5004_2_3",
+          "name": "Exceptions",
+          "description": "Understanding exceptions in programming.",
+          "module": "M5004_2"
+        }
+      ]
+    },
+    {
+      "_id": "M5004_3",
+      "name": "Representing More Complex Forms of Data",
+      "description": "Understanding how to represent more complex forms of data in programming.",
+      "course": "5004",
+      "lessons": [
+        {
+          "_id": "L5004_3_1",
+          "name": "Complex Data Forms",
+          "description": "Introduction to complex data forms.",
+          "module": "M5004_3"
+        },
+        {
+          "_id": "L5004_3_2",
+          "name": "Data Structures",
+          "description": "Basics of data structures in programming.",
+          "module": "M5004_3"
+        }
+      ]
+    },
+    {
+      "_id": "M5008_1",
+      "name": "Introduction to Linux GIT and SSH",
+      "description": "Basics of Linux, GIT, and SSH for version control and secure communication.",
+      "course": "5008",
+      "lessons": [
+        {
+          "_id": "L5008_1_1",
+          "name": "Linux Basics",
+          "description": "Introduction to Linux operating system.",
+          "module": "M5008_1"
+        },
+        {
+          "_id": "L5008_1_2",
+          "name": "GIT Basics",
+          "description": "Understanding GIT for version control.",
+          "module": "M5008_1"
+        },
+        {
+          "_id": "L5008_1_3",
+          "name": "SSH Basics",
+          "description": "Basics of SSH for secure communication.",
+          "module": "M5008_1"
+        }
+      ]
+    },
+    {
+      "_id": "M5008_2",
+      "name": "The C Programming Language",
+      "description": "Introduction to the C programming language.",
+      "course": "5008",
+      "lessons": [
+        {
+          "_id": "L5008_2_1",
+          "name": "C Basics",
+          "description": "Introduction to the basics of C programming.",
+          "module": "M5008_2"
+        },
+        {
+          "_id": "L5008_2_2",
+          "name": "Data Types in C",
+          "description": "Understanding data types in C programming.",
+          "module": "M5008_2"
+        }
+      ]
+    },
+    {
+      "_id": "M5008_3",
+      "name": "Array, Stacks, Queues and Linked Lists",
+      "description": "Understanding array, stacks, queues and linked lists in data structures.",
+      "course": "5008",
+      "lessons": [
+        {
+          "_id": "L5008_3_1",
+          "name": "Arrays",
+          "description": "Introduction to arrays in data structures.",
+          "module": "M5008_3"
+        },
+        {
+          "_id": "L5008_3_2",
+          "name": "Stacks",
+          "description": "Understanding stacks in data structures.",
+          "module": "M5008_3"
+        },
+        {
+          "_id": "L5008_3_3",
+          "name": "Queues",
+          "description": "Basics of queues in data structures.",
+          "module": "M5008_3"
+        },
+        {
+          "_id": "L5008_3_4",
+          "name": "Linked Lists",
+          "description": "Understanding linked lists in data structures.",
+          "module": "M5008_3"
+        }
+      ]
+    },
+    {
+      "_id": "M5800_1",
+      "name": "Introduction",
+      "description": "Overview of algorithms and their importance in computer science.",
+      "course": "5800",
+      "lessons": [
+        {
+          "_id": "L5800_1_1",
+          "name": "What is an Algorithm?",
+          "description": "Understanding the concept of algorithms.",
+          "module": "M5800_1"
+        },
+        {
+          "_id": "L5800_1_2",
+          "name": "Algorithm Examples",
+          "description": "Examples of common algorithms and their applications.",
+          "module": "M5800_1"
+        }
+      ]
+    },
+    {
+      "_id": "M5800_2",
+      "name": "Complexity",
+      "description": "Introduction to the complexity of algorithms.",
+      "course": "5800",
+      "lessons": [
+        {
+          "_id": "L5800_2_1",
+          "name": "Time Complexity",
+          "description": "Understanding time complexity of algorithms.",
+          "module": "M5800_2"
+        },
+        {
+          "_id": "L5800_2_2",
+          "name": "Space Complexity",
+          "description": "Basics of space complexity in algorithms.",
+          "module": "M5800_2"
+        }
+      ]
+    },
+    {
+      "_id": "M5800_3",
+      "name": "Recurrences",
+      "description": "Understanding recurrences in algorithms.",
+      "course": "5800",
+      "lessons": [
+        {
+          "_id": "L5800_3_1",
+          "name": "Recurrence Relations",
+          "description": "Introduction to recurrence relations in algorithms.",
+          "module": "M5800_3"
+        },
+        {
+          "_id": "L5800_3_2",
+          "name": "Solving Recurrences",
+          "description": "Basics of solving recurrences in algorithms.",
+          "module": "M5800_3"
+        }
+      ]
+    },
+    {
+      "_id": "M5200_1",
+      "name": "Basics",
+      "description": "Introduction to the fundamental concepts of database management systems.",
+      "course": "5200",
+      "lessons": [
+        {
+          "_id": "L5200_1_1",
+          "name": "Database Basics",
+          "description": "Understanding the basics of databases.",
+          "module": "M5200_1"
+        },
+        {
+          "_id": "L5200_1_2",
+          "name": "Data Modeling",
+          "description": "Introduction to data modeling techniques.",
+          "module": "M5200_1"
+        }
+      ]
+    },
+    {
+      "_id": "M5200_2",
+      "name": "SQL and UML Advanced",
+      "description": "Advanced concepts in SQL and UML.",
+      "course": "5200",
+      "lessons": [
+        {
+          "_id": "L5200_2_1",
+          "name": "Advanced SQL",
+          "description": "Introduction to advanced SQL concepts.",
+          "module": "M5200_2"
+        },
+        {
+          "_id": "L5200_2_2",
+          "name": "Advanced UML",
+          "description": "Understanding advanced UML concepts.",
+          "module": "M5200_2"
+        }
+      ]
+    },
+    {
+      "_id": "M5200_3",
+      "name": "NoSQL and CAP theorem",
+      "description": "Understanding NoSQL databases and CAP theorem.",
+      "course": "5200",
+      "lessons": [
+        {
+          "_id": "L5200_3_1",
+          "name": "NoSQL Basics",
+          "description": "Introduction to NoSQL databases.",
+          "module": "M5200_3"
+        },
+        {
+          "_id": "L5200_3_2",
+          "name": "CAP Theorem",
+          "description": "Basics of CAP theorem in distributed systems.",
+          "module": "M5200_3"
+        }
+      ]
+    },
+    {
+      "_id": "M5610_1",
+      "name": "HTML",
+      "description": "Introduction to HTML for web development.",
+      "course": "5610",
+      "lessons": [
+        {
+          "_id": "L5610_1_1",
+          "name": "HTML Basics",
+          "description": "Understanding the basics of HTML.",
+          "module": "M5610_1"
+        },
+        {
+          "_id": "L5610_1_2",
+          "name": "HTML Elements",
+          "description": "Introduction to HTML elements and their usage.",
+          "module": "M5610_1"
+        }
+      ]
+    },
+    {
+      "_id": "M5610_2",
+      "name": "CSS",
+      "description": "Introduction to CSS for styling web pages.",
+      "course": "5610",
+      "lessons": [
+        {
+          "_id": "L5610_2_1",
+          "name": "CSS Basics",
+          "description": "Understanding the basics of CSS.",
+          "module": "M5610_2"
+        },
+        {
+          "_id": "L5610_2_2",
+          "name": "CSS Flexbox",
+          "description": "Introduction to CSS Flexbox for layout design.",
+          "module": "M5610_2"
+        }
+      ]
+    },
+    {
+      "_id": "M5610_3",
+      "name": "JavaScript Basics",
+      "description": "Introduction to JavaScript for web development.",
+      "course": "5610",
+      "lessons": [
+        {
+          "_id": "L5610_3_1",
+          "name": "JavaScript Basics",
+          "description": "Understanding the basics of JavaScript.",
+          "module": "M5610_3"
+        },
+        {
+          "_id": "L5610_3_2",
+          "name": "JavaScript Functions",
+          "description": "Introduction to JavaScript functions.",
+          "module": "M5610_3"
+        }
+      ]
+    }
+  ]
+  
