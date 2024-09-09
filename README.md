@@ -91,7 +91,7 @@ JWT_SECRET=your_jwt_secret
 ```
 
 ## Folder Structure
-
+```
 Kanbas-App/
 │
 ├── client/             # Frontend (React.js)
@@ -105,7 +105,7 @@ Kanbas-App/
 │   ├── Users/          # User-related routes, models, DAOs
 │   └── App.js          # Main Express.js app file
 └── README.md           # Project documentation
-
+```
 ---
 
 ## APIs
