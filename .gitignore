@@ -1,17 +1,17 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# Client-side dependencies (React)
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+# Client-side testing
 /coverage
 
-# production
+# Client-side production build
 /build
 
-# misc
+# Client-side misc
 .DS_Store
 .env.local
 .env.development.local
@@ -21,3 +21,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Server-side dependencies (Node.js)
+/server/node_modules
+
+# Server-side environment files
+/server/.env
+/server/.env.local
+
+# Server-side misc
+/server/logs
+/server/*.log
+/server/.DS_Store
